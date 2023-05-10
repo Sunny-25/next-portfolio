@@ -2,9 +2,9 @@ import { Nav } from "./";
 import { Footer } from "@/components";
 
 const Layout = ({ children }) => (
-	<div className="min-h-screen flex flex-col ">
+	<div className="min-h-screen bg-black flex flex-col ">
 		<Nav />
-		<div className="h-full bg-black px-20">{children}</div>
+		<div className=" bg-black lg:px-[30vw] px-20">{children}</div>
 		<Footer />
 	</div>
 );

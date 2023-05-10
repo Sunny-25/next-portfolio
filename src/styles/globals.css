@@ -6,7 +6,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Menlo;
+  font-family: monospace;
+  font-family: mono;
+  color: white;
 }
 
 html {
@@ -14,10 +16,12 @@ html {
 }
 
 a {
-  font-size: small;
+  @apply text-gray-300
+	text-[.75rem];
 }
-a :hover {
-  font-weight: bold;
+
+a:hover {
+  @apply font-bold text-white;
 }
 
 html,
