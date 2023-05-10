@@ -10,7 +10,7 @@ export const aboutPraveen = [
 	{
 		title: "About Praveen",
 		desc: "Nahid is a 20 year old, self-taught software developer, currently working as a tech support engineer at WPMU DEV, one of the leading WordPress development companies. Besides his awesome day job, he spends the rest of his leisure time in open source development. Spoiler alert: He has a special place in his heart for *modern* javascript.",
-		ref: "aboutPraveen",
+		ref: "AboutPraveen",
 	},
 	{
 		title: "Biography",
@@ -29,7 +29,7 @@ export const aboutPraveen = [
 	},
 
 	{
-		title: "Open Source Software",
+		title: "OpenSource",
 		desc: "At his time out of work, Nahid develops and contributes to open source software. His major works include multiple WordPress core contributions and mainly, contributions to the reactjs built WordPress Gutenberg project. He is a member of the core WordPress Gutenberg project development team, working alongside world-famous developers building software used by millions. Besides, he develops small WordPress plugins as pet projects which are free and open source.",
 		ref: "Open Source Software",
 	},
@@ -37,5 +37,43 @@ export const aboutPraveen = [
 		title: "Community",
 		desc: "Nahid is an active member of the Dhaka WordPress Community. He loves WordCamps. So far, he has attended WordCamp Bangkok (2018), WordCamp Manchester (2018) and WordCamp Europe (2019). Nahid was also a member of the organizing team for WordCamp Dhaka 2019.",
 		ref: "Community",
+	},
+];
+export const projectsData = [
+	{
+		title: "Title",
+		desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, illum earum",
+	},
+	{
+		title: "Title",
+		desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, illum earum",
+	},
+	{
+		title: "Title",
+		desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, illum earum",
+	},
+	{
+		title: "Title",
+		desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, illum earum",
+	},
+	{
+		title: "Title",
+		desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, illum earum",
+	},
+	{
+		title: "Title",
+		desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, illum earum",
+	},
+	{
+		title: "Title",
+		desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, illum earum",
+	},
+	{
+		title: "Title",
+		desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, illum earum",
+	},
+	{
+		title: "Title",
+		desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, illum earum",
 	},
 ];

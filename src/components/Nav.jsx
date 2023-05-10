@@ -22,6 +22,9 @@ const Nav = () => {
 				<Link
 					className={pathname == "/projects" ? "font-bold text-white" : "text-gray-300"}
 					href="/projects">{`<projects>`}</Link>
+				<Link
+					className={pathname == "/blog" ? "font-bold text-white" : "text-gray-300"}
+					href="/blog">{`<blog>`}</Link>
 			</div>
 		</div>
 	);

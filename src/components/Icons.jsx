@@ -5,9 +5,13 @@ import { homePageIcons } from "../assets/icons";
 const Icons = () => {
 	return (
 		<ul className="flex gap-4 my-2">
-			{homePageIcons.map((i) => (
-				<li key={i}>
-					<Link href={i.link}>{i.icon}</Link>
+			{homePageIcons.map(({ link, icon }) => (
+				<li key={icon}>
+					<Link
+						className="text-blue-500 text-lg"
+						href={link}>
+						{icon}
+					</Link>
 				</li>
 			))}
 		</ul>

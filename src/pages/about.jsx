@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import img from "../assets/img.jpg";
 import Icons from "../components/Icons";
-import { aboutCardDetails, aboutPraveen, bio } from "../assets/constants";
+import { aboutCardDetails, aboutPraveen } from "../assets/constants";
 import Link from "next/link";
 
 const About = () => {
@@ -38,37 +38,37 @@ const About = () => {
 				{/* LEFT SIDE  */}
 				<div className="my-4">
 					<Link
-						href={"/"}
+						href={"#AboutPraveen"}
 						className=" mb-2 ">
 						About Praveen
 					</Link>
 					<ul className="flex flex-col gap-2 ">
 						<li>
-							<Link href={"/"}>{"↳ Biography"}</Link>
+							<Link href={"#Biography"}>{"↳ Biography"}</Link>
 						</li>
 						<li>
-							<Link href={"/"}>{"↳ Education"}</Link>
+							<Link href={"#Education"}>{"↳ Education"}</Link>
 						</li>
 						<li>
-							<Link href={"/"}>{"↳ Work"}</Link>
+							<Link href={"#Work"}>{"↳ Work"}</Link>
 						</li>
 						<li>
-							<Link href={"/"}>{"↳ Open Source Contributions"}</Link>
+							<Link href={"#OpenSource"}>{"↳ Open Source Contributions"}</Link>
 						</li>
 						<li>
-							<Link href={"/"}>{"↳ Community"}</Link>
+							<Link href={"#Community"}>{"↳ Community"}</Link>
 						</li>
 					</ul>
 				</div>
 
 				{/* RIGHT SIDE */}
-				<div className="w-[70%] bg-black my-4">
-					{aboutPraveen.map((i) => (
+				<div className="w-[70%] bg-black my-4 flex flex-col overflow-auto gap-6">
+					{aboutPraveen.map(({ title, desc, ref }) => (
 						<div
 							key={"i"}
-							id={i.ref}>
-							<h1 className="text-[2rem]">{i.title} </h1>
-							<p className="text-sm">{i.desc}</p>
+							id={ref}>
+							<h1 className="text-[2rem]">{title} </h1>
+							<p className="text-sm">{desc}</p>
 						</div>
 					))}
 				</div>

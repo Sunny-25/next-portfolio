@@ -11,6 +11,14 @@
 	font-family: mono;
 	color: white;
 }
+*,
+html {
+	scroll-behavior: smooth !important;
+}
+
+*::-webkit-scrollbar {
+	width: 0;
+}
 
 html {
 	scroll-behavior: smooth;
