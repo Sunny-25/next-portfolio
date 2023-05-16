@@ -77,3 +77,21 @@ export const projectsData = [
 		desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, illum earum",
 	},
 ];
+export const effect = (e) => {
+	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	let iterations = 0;
+	const name = e.target.dataset.name;
+	const interval = setInterval(() => {
+		e.target.innerText = e.target.innerText
+			.split("")
+			.map((letter, index) => {
+				if (index < iterations) {
+					return name[index];
+				}
+				return letters[Math.floor(Math.random() * 26)];
+			})
+			.join("");
+		if (iterations >= name.length) clearInterval(interval);
+		iterations += 1 / 3;
+	}, 30);
+};

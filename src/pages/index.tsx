@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import { Layout } from "@/components";
 import Link from "next/link";
+import {effect} from '../assets/constants'
 
 const inter = Inter({ subsets: ["latin"] });
 const navitems: string[] = [
@@ -16,14 +17,15 @@ const navitems: string[] = [
 ];
 
 export default function Home() {
+
 	return (
 		<Layout>
 			<div className="text-white flex flex-1 flex-col justify-center min-h-[calc(100vh-5rem)]">
 				<div className="flex flex-col">
-					<span className="text-gray-400">{"// Hi, my name is"}</span>
-					<span className="mt-[-1rem] text-white text-[2.5rem]">
+					<span  className="text-gray-400">{"// Hi, my name is"}</span>
+					<h1 data-name='Praveen Kumar Potturi' onMouseOver={effect} className="effect mt-[-1rem] ">
 						Praveen Kumar Potturi
-					</span>
+					</h1>
 					<br />
 					<div>
 						<h1>
